@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 /*****************************************************
 *    Title: MatrixGraph.java
 *    Author: Koffman and Wolfgang
@@ -12,8 +14,9 @@ public class MatrixGraph extends AbstractGraph {
     //entries in matrix are 1.0 or 0.0
     //1.0 indicates an edge.
     //0.0 indicates no edge
-    
+    private int numVertices;
     private double[][] matrix;
+    private LinkedList<Integer> adj[];
     
     public MatrixGraph(int nV, boolean direct){
         super(nV, direct);
@@ -56,6 +59,15 @@ public class MatrixGraph extends AbstractGraph {
     
     public void breadthFirstTraversal(int start){
 	//Output the vertices in breadth first order
+        {
+            // Mark all the vertices as not visited
+            boolean visited[] = new boolean[numVertices];
+
+            LinkedList<Integer> queue = new LinkedList<Integer>();
+            visited[start]=true;
+            queue.add(start);
+
+        }
     }
     
     public void depthFirstTraversal(int start){

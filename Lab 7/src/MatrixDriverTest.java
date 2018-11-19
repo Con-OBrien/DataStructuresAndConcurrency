@@ -33,5 +33,7 @@ public class MatrixDriverTest {
         edge = new Edge(2,4);
         undirectedGraph.insert(edge);
 
+        undirectedGraph.breadthFirstTraversal(1);
+
     }
 }

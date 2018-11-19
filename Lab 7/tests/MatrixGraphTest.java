@@ -30,6 +30,14 @@ class MatrixGraphTest {
 
     @Test
     void breadthFirstTraversal() {
+        Edge edge = new Edge(0,1);
+        Edge edge2 = new Edge(1,3);
+        Edge edge3 = new Edge(2,4);
+        graph.insert(edge);
+        graph.insert(edge2);
+        graph.insert(edge3);
+
+
     }
 
     @Test
